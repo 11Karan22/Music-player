@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Music Player Using Html & CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carousel3.css">
+    <link rel="stylesheet" href="homepage.css">
+    <meta name="viewport" content=
+      "width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+  <section>
+    <div class="topnav">
+      <img style="width: 40px;height: 40px;" src="https://i.pinimg.com/originals/cb/70/11/cb70112e2e9989312a51fc10e64324b2.png">
+      <div id="myLinks">
+        <a href="#news">Music</a>
+        <a href="#contact">Favourites</a>
+        <a href="#about">daily Mix</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div>
+      <nav>
+        <div class="logo">
+        <img src="https://i.pinimg.com/originals/cb/70/11/cb70112e2e9989312a51fc10e64324b2.png">
+        </div>
+        <div class="menu">
+    <a href="#" >Favourites</a>
+    <div class="seacrh-bell">
+    <div class="box">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <input type="text" name=""  placeholder="Search">
+    </div>
+    <div class="bell"><i class="fas fa-bell"></i></div>
+    </div> 
+    <div class="licon">
+      <li>
+        <a href="#">
+          <i class="fas fa-user-circle
+            fa-2x" style="color: white;">
+          </i>
+        </a>
+      </li>
+    </div>
+        </div>
+    </nav>
+    </div>
+    </section>
+   
+ <div class="main-container">
+  <div class="left-part" >
+<!-- carousel-section-->
+<div class="carousel-container">
+  <input type="radio" name="slider" id="item-1" checked>
+  <input type="radio" name="slider" id="item-2">
+  <input type="radio" name="slider" id="item-3">
+<div class="carousel-cards">
+  <label class="carousel-card" for="item-1" id="song-1">
+      <img src="https://i.ytimg.com/vi/dJslhlH3V8o/maxresdefault.jpg" alt="song">
+    
+  </label>
+  <label class="carousel-card" for="item-2" id="song-2">
+      <img src="https://i.ytimg.com/vi/o9PY6NsB3_E/maxresdefault.jpg" alt="song">
+    
+  </label>
+  <label class="carousel-card" for="item-3" id="song-3">
+      <img src="https://static.toiimg.com/photo/msid-81947179/81947179.jpg" alt="song">
+    
+  </label>
+</div>
+<div class="player">
+  <div class="upper-part">
+    <div class="play-icon">
+      <svg width="20" height="20" fill="#790c5a" stroke="#790c5a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
+        <defs/>
+        <path d="M5 3l14 9-14 9V3z"/>
+      </svg>
+    </div>
+    <div class="info-area" id="test">
+      <label class="song-info" id="song-info-1">
+        <div class="title">Few days</div>
+        <div class="sub-line">
+          <div class="subtitle">Balthazar</div>
+          <div class="time">4.05</div>
+        </div>
+      </label>
+      <label class="song-info" id="song-info-2">
+        <div class="title">Words Remain</div>
+        <div class="sub-line">
+          <div class="subtitle">Moderator</div>
+          <div class="time">3.05</div>
+        </div>
+      </label>
+      <label class="song-info" id="song-info-3">
+        <div class="title">Bandook</div>
+        <div class="sub-line">
+          <div class="subtitle">Karan Aujla</div>
+          <div class="time">2.05</div>
+        </div>
+      </label>
+    </div>
+  </div>
+  <div class="progress-bar">
+    <span class="progress"></span>
+  </div>
+</div>
+</div> 
+     <!-- latest release section-->
+  <section id="latest-release">
+    <div class="white" style="font-size: 25px;margin-left: 40px;"> ORIGINALS</div>
+    <div class="latest-release">
+      
+      <div class="card-latest" >
+        <img style="border-radius: 0;" src="https://i.etsystatic.com/25663452/d/il/6786ff/2720343411/il_340x270.2720343411_pjl1.jpg?version=0" alt="Alps" >
+        <div class="content-latest">
+          <h2>Hero</h2>
+          <p>11 August,2021</p>
+        </div>
+        <div class="dropdown">
+          <span class="dropbtn dots-dropdown"><i class="fas fa-ellipsis-h"></i></span>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            </div>
+          </div>   
+          <div class="music"><i class="fas fa-play"></i></div>   
+    </div>
+  
+      <div class="card-latest" >
+        <img style="border-radius: 0;" src="https://i.pinimg.com/originals/cc/02/35/cc023597e65ec1ab103c960a5ca19ccf.jpg" alt="Alps" >
+        <div class="content-latest">
+          <h2>Qnism</h2>
+          <p>11 August,2021</p>
+        </div>
+        <div class="dropdown">
+          <span class="dropbtn dots-dropdown"><i class="fas fa-ellipsis-h"></i></span>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            </div>
+          </div>      
+          <div class="music"><i class="fas fa-play"></i></div>  
+    </div>
+    
+      <div class="card-latest" >
+        <img style="border-radius: 0;" src="https://i.pinimg.com/originals/cc/0b/3c/cc0b3c71a8df4b22ebb7958137eeef9c.jpg" alt="Alps" >
+        <div class="content-latest">
+          <h2>Qnism</h2>
+          <p>11 August,2021</p>
+        </div>
+        <div class="dropdown">
+          <span class="dropbtn dots-dropdown"><i class="fas fa-ellipsis-h"></i></span>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            </div>
+          </div>      
+          <div class="music"><i class="fas fa-play"></i></div>  
+    </div>
+    
+    
+      <div class="card-latest" >
+        <img style="border-radius: 0;" src="https://pbs.twimg.com/media/CtcVNESWIAEYGWI.jpg" alt="Alps" >
+        <div class="content-latest">
+          <h2>Qnism</h2>
+          <p>11 August,2021</p>
+        </div>
+        <div class="dropdown">
+          <span class="dropbtn dots-dropdown"><i class="fas fa-ellipsis-h"></i></span>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            </div>
+          </div>    
+          <div class="music"><i class="fas fa-play"></i></div>    
+    </div>
+    </div>
+      </section>
+ <!--artist section-->
+<section id="artist">
+	<div id="artist-heading">
+		<h1 style="color: white;margin-left: 30px;font-size: 25px;">POPULAR ARTIST</h1>
+	</div>
+<div class="artist">
+	<a href="major-project_part-2.html" style="text-decoration: none;">
+  <div class="content-artist">
+	<img src="https://c4.wallpaperflare.com/wallpaper/516/72/957/imagine-dragons-4k-pc-full-hd-wallpaper-preview.jpg" 
+	style="object-fit:cover;
+		   width:100px;
+		   height:100px;
+		   border: solid 1px #CCC"/>
+		    <p style="color: white;font-size: large;text-align: center;">Imagine</p>
+        <div class="music"><i class="fas fa-play"></i></div>  
+</div>
+</a>
+<div class="content-artist">
+	
+		<img src="https://static.billboard.com/files/media/selena-gomez-2018-r-coach-billboard-1548-compressed.jpg" 
+		style="object-fit:cover;
+			   width:100px;
+			   height:100px;
+			   border: solid 1px #CCC"/>
+			    <p style="color: white;font-size: large;text-align: center;">Selena</p>
+          <div class="music"><i class="fas fa-play"></i></div>  
+	</div>
+	
+	<div class="content-artist">
+		
+			<img src="https://store-images.s-microsoft.com/image/apps.54509.9007199266347147.2355122c-3514-4b39-910b-5bb0dd2ae4c2.4323ca77-9355-4a21-81ba-bf9218e97830?mode=scale&q=90&h=300&w=300" 
+			style="object-fit:cover;
+				   width:100px;
+				   height:100px;
+				   border: solid 1px #CCC"/>
+				    <p style="color: white;font-size: large;text-align: center;">ed sheeren</p>
+            <div class="music"><i class="fas fa-play"></i></div>  
+		</div>
+		
+	<div class="content-artist">
+		
+			<img src="https://m.media-amazon.com/images/M/MV5BMzM2MDk5ODAyNV5BMl5BanBnXkFtZTgwNzIwNjcxNzE@._V1_UY1200_CR559,0,630,1200_AL_.jpg" 
+			style="object-fit:cover;
+				   width:100px;
+				   height:100px;
+				   border: solid 1px #CCC"/>
+				    <p style="color: white;font-size: large;text-align: center;">Charlie Puth</p>
+            <div class="music"><i class="fas fa-play"></i></div>  
+		</div>
+		
+	<div class="content-artist">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Zayn_Wiki_%28cropped%29.jpg" 
+			style="object-fit:cover;
+				   width:100px;
+				   height:100px;
+				   border: solid 1px #CCC"/>
+				   <p style="color: white;font-size: large;text-align: center;">Zyan</p>
+           <div class="music"><i class="fas fa-play"></i></div>  
+	</div>
+	<div class="content-artist">
+		
+    <img src="data:image/jpeg;base64,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" 
+    style="object-fit:cover;
+         width:100px;
+         height:100px;
+         border: solid 1px #CCC"/>
+         <p style="color: white;font-size: large;text-align: center;">Billie eilish</p>
+         <div class="music"><i class="fas fa-play"></i></div>  
+  
+</div>
+</div>
+<!--genre section-->
+<section>
+  <div class="genre-container">
+      <div id="genre1">
+          <img src="https://i.scdn.co/image/ab67706f00000003bd0e19e810bb4b55ab164a95" alt="">
+      </div>
+      <div class="genre">
+          <img src="https://i.scdn.co/image/ab67706f00000003a9e1322caa711b3c585d65bf" alt="">
+      </div>
+      <div class="genre">
+          <img src="https://i.scdn.co/image/ab67706f0000000399072597ce8718ef0d40fc69" alt="">
+      </div>
+      <div class="genre">
+          <img src="https://i.scdn.co/image/ab67706f00000003bbf7afae234cf3c684ec7b4f" alt="">
+      </div>
+      <div class="genre">
+          <img src="https://i.scdn.co/image/ab67706f00000003f5e3bf0413ec122f118e5f08" alt="">
+      </div>
+      <div class="genre">
+          <img src="https://i.scdn.co/image/ab67706f00000002438f34cf05b98bd954900f8c" alt="">
+      </div>
+  </div>
+</section>
+</section>
+<!--types section-->
+<div class="types">
+<div class="main-types">
+  <figure>
+      <img src="https://media.istockphoto.com/photos/nicelooking-attractive-gorgeous-glamorous-elegant-stylish-cheerful-picture-id1165055006?k=20&m=1165055006&s=612x612&w=0&h=OD4-_BceL_R2eaaBzDQrXNIyydwYXOJX-m-0z12z17s=" alt="">
+      <figcaption>
+          <h1>PARTY</h1>
+        
+      </figcaption>
+  </figure>
+
+</div>
+<div class="main-types">
+  <figure>
+      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/country-road-along-rocky-mountains-royalty-free-image-678834219-1550781633.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=640:*" alt="">
+      <figcaption>
+          <h1>TRIP</h1>
+        
+      </figcaption>
+  </figure>
+
+</div>
+<div class="main-types">
+  <figure>
+      <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_860462652_396419.jpg" alt="">
+      <figcaption>
+          <h1>MUSIC</h1>
+          
+      </figcaption>
+  </figure>
+
+</div>
+</div>
+<!-- cards section -->
+<div >
+<h1 class="white" style="margin-top: 50px;font-size: 25px;"> Latest english</h1>
+</div>
+<div class="container-english">
+
+  <div class="card-english">
+    <img src="https://i.etsystatic.com/25663452/d/il/6786ff/2720343411/il_340x270.2720343411_pjl1.jpg?version=0" alt="Alps" >
+    <div class="content-english">
+      <h3>Charlie Puth</h3>
+      <p>19,jan 2020</p>
+    </div>
+    <div class="music"><i class="fas fa-play"></i></div>  
+  </div>
+   <div class="card-english" >
+    <img src="https://trendbuddies.com/wp-content/uploads/2021/07/Inspiring-Billie-Eilish-Zodiac-shares-8.jpg" >
+    <div class="content-english">
+      <h3>Billie Eilish</h3>
+      <p>5 December,2002</p>
+      <div class="music"><i class="fas fa-play"></i></div>  
+    </div>
+  </div>
+   <div class="card-english" >
+    <img src="https://talenthouse-res.cloudinary.com/image/upload/c_fill,f_auto,h_811,w_640/v1568940597/user-1023410/profile/jczzphkqkrbznh98cacr.jpg" alt="Alps" >
+    <div class="content-english">
+      <h3>Camila</h3>
+      <p>11 August,2019</p>
+    </div>
+    <div class="music"><i class="fas fa-play"></i></div>  
+  </div>
+  <div class="card-english" >
+    <img src="https://m.media-amazon.com/images/I/511X2G68kcL.jpg" alt="Alps" >
+    <div class="content-english">
+      <h3>Camila </h3>
+      <p>4,October 2014</p>
+    </div>
+    <div class="music"><i class="fas fa-play"></i></div>  
+  </div>
+  <div class="card-english" >
+    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2021%2F04%2F27%2FBillie-Eilish.jpg" alt="Alps" >
+    <div class="content-english">
+      <h3>Qnism</h3>
+      <p>11 August,2021</p>
+    </div>
+    <div class="music"><i class="fas fa-play"></i></div>  
+  </div>
+  <div class="card-english" >
+    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2021%2F04%2F27%2FBillie-Eilish.jpg" alt="Alps" >
+    <div class="content-english">
+      <h3>Qnism</h3>
+      <p>11 August,2021</p>
+    </div>
+    <div class="music"><i class="fas fa-play"></i></div>  
+  </div>
+  <div class="card-english" >
+    <img src="https://aniportalimages.s3.amazonaws.com/media/details/Screenshot_20210709-202405__01.jpg" alt="Alps" >
+    <div class="content-english">
+      <h3>Karan Aujla</h3>
+      <p>Don't look</p>
+    </div>
+    <div class="music"><i class="fas fa-play"></i></div>  
+  </div>
+  <div class="card-english" >
+    <img src="https://i.pinimg.com/originals/e2/c8/fd/e2c8fd41633c904bc9bc535271bfd733.jpg" alt="Alps" >
+    <div class="content-english">
+      <h3>karan Aujla</h3>
+      <p>Jhanjar</p>
+    </div>
+    <div class="music"><i class="fas fa-play"></i></div>  
+  </div>
+  <div class="card-english" >
+    <img src="https://i.pinimg.com/236x/3d/a0/ca/3da0caa41cb3f6a7f088e8f7f64ca5de--images-of-selena-gomez-idol.jpg" alt="Alps" >
+    <div class="content-english">
+      <h3>Qnism</h3>
+      <p>11 August,2021</p>
+    </div>
+    <div class="music"><i class="fas fa-play"></i></div>  
+  </div>
+  <div class="card-english" >
+    <img src="https://m.media-amazon.com/images/I/91vNWcHC5RL._SL1500_.jpg" alt="Alps" >
+    <div class="content-english">
+      <h3>Qnism</h3>
+      <p>11 August,2021</p>
+    </div>
+    <div class="music"><i class="fas fa-play"></i></div>  
+  </div>
+  <div class="card-english" >
+    <img src="https://m.media-amazon.com/images/I/91vNWcHC5RL._SL1500_.jpg" alt="Alps" >
+    <div class="content-english">
+      <h3>Qnism</h3>
+      <p>11 August,2021</p>
+    </div>
+    <div class="music"><i class="fas fa-play"></i></div>  
+  </div>
+  <div class="card-english" >
+    <img src="https://rukminim1.flixcart.com/image/416/416/jnc2bgw0/poster/n/j/g/large-wall-poster-justin-bieber-fan-art-music-poster-large-size-original-imafaf54phz9a27m.jpeg?q=70" alt="Alps" >
+    <div class="content-english">
+      <h3>Believe</h3>
+      <p>11 Sep,2007</p>
+    </div>
+    <div class="music"><i class="fas fa-play"></i></div>  
+  </div>
+  
+</div>
+</div>
+
+
+<!--aside section-->
+<div class="aside2">
+  <div class="aside-head white">
+<h2 style="text-transform: none;">Queue</h2>
+<div class="cselect " style="color: black;"><select>
+  <option>Queue</option>
+  <option>Selena Gomez</option>
+  <option>Charlie puth</option>
+  <option>Nancy Momoland</option>
+  <option>Bille Ellish</option>
+</select></div>
+</div>
+
+<div class="aside2-card" >
+<a href="#song" style="text-decoration: none;" class="music-click">
+ <div class="aside2-content" >
+   <div class="aside-img">
+    <div class="music"><i class="fas fa-play"></i></div>
+   <img src="https://lyricsstatus.com/wp-content/uploads/2020/02/wp-15823088261702324563420825238714.jpg" alt="Alps" >
+   </div>
+   <div class="inner-content">
+     <h2>karan Aujla</h3>
+     <p>Punjabi Singer</p>
+     
+   </div>
+   <div class="inner-content2" >
+     <p><i class="fas fa-ellipsis-h"></i></p>
+   <p>4:44</p>
+   </div>
+ </div>
+</a>
+<a href="#song" style="text-decoration: none;" class="music-click">
+ 
+ <div class="aside2-content" >
+  <div class="aside-img">
+   <div class="music"><i class="fas fa-play"></i></div>
+  <img src="https://ih1.redbubble.net/image.1019383605.2489/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg" alt="Alps" >
+  </div>
+  <div class="inner-content">
+    <h2>Charlie Puth</h3>
+    <p>Singer</p>
+    
+  </div>
+  <div class="inner-content2" >
+    <p><i class="fas fa-ellipsis-h"></i></p>
+  <p>4:44</p>
+  </div>
+</div>
+</a>
+<a href="#song" style="text-decoration: none;" class="music-click">
+<div class="aside2-content" >
+  <div class="aside-img">
+   <div class="music"><i class="fas fa-play"></i></div>
+  <img src="https://m.media-amazon.com/images/M/MV5BYzg3YWFmMDYtYzk0YS00NjUwLTg2ZTYtYzBiYjVmZjM0ZDMwXkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg" alt="Alps" >
+  </div>
+  <div class="inner-content">
+    <h3>Selena</h3>
+    <p>Singer</p>
+    
+  </div>
+  <div class="inner-content2" >
+    <p><i class="fas fa-ellipsis-h"></i></p>
+  <p>4:44</p>
+  </div>
+</div>
+</a>
+<a href="#song" style="text-decoration: none;" class="music-click">
+ 
+ <div class="aside2-content" >
+   <div class="aside-img">
+    <div class="music"><i class="fas fa-play"></i></div>
+   <img  src="https://wallpaperaccess.com/full/1695787.jpg" alt="Alps" >
+   </div>
+   <div class="inner-content">
+     <h3>3ustiin</h3>
+     <p>Pop Band</p>
+     
+   </div>
+   <div class="inner-content2" >
+     <p><i class="fas fa-ellipsis-h"></i></p>
+   <p>4:44</p>
+   </div>
+ </div>
+ </a>
+ <div class="aside2-content" >
+   <div class="aside-img">
+    <div class="music"><i class="fas fa-play"></i></div>
+   <img  src="https://www.imaginedragonsmusic.com/sites/g/files/aaj7266/f/styles/suzuki_breakpoints_image_mobile-md_sq/public/release/201810/d3acaeb069f37d8e257221f7224c813c5fa6024e.jpg?itok=7hjEdl70" alt="Alps" >
+   </div>
+   <div class="inner-content">
+     <h3>Imagine 3rogons</h3>
+     <p>Pop band</p>
+     
+   </div>
+   <div class="inner-content2" >
+     <p><i class="fas fa-ellipsis-h"></i></p>
+   <p>4:44</p>
+   </div>
+ </div>
+ <div class="aside2-content" >
+   <div class="aside-img">
+    <div class="music"><i class="fas fa-play"></i></div>
+   <img  src="data:image/jpeg;base64,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" alt="Alps" >
+   </div>
+   <div class="inner-content">
+     <h3>Imagine 3rogons</h3>
+    <p>Pop band</p>
+     
+   </div>
+   <div class="inner-content2" >
+     <p><i class="fas fa-ellipsis-h"></i></p>
+   <p>4:44</p>
+   </div>
+ </div>
+ <div class="aside2-content" >
+   <div class="aside-img">
+    <div class="music"><i class="fas fa-play"></i></div>
+   <img  src="https://wallpaperaccess.com/full/1695787.jpg" alt="Alps" >
+   </div>
+   <div class="inner-content">
+     <h3>Qnism</h3>
+     <p></p>
+     
+   </div>
+   <div class="inner-content2" >
+     <p><i class="fas fa-ellipsis-h"></i></p>
+   <p>4:44</p>
+   </div>
+ </div>
+ <div class="aside2-content" >
+   <div class="aside-img">
+    <div class="music"><i class="fas fa-play"></i></div>
+   <img  src="https://m.media-amazon.com/images/I/511X2G68kcL.jpg" alt="Alps" >
+   </div>
+   <div class="inner-content">
+     <h3>Qnism</h3>
+     <p>Pop Band</p>
+     
+   </div>
+   <div class="inner-content2" >
+     <p><i class="fas fa-ellipsis-h"></i></p>
+   <p>4:44</p>
+   </div>
+ </div>
+ <div class="aside2-content" >
+   <div class="aside-img">
+    <div class="music"><i class="fas fa-play"></i></div>
+   <img  src="https://m.media-amazon.com/images/I/511X2G68kcL.jpg" alt="Alps" >
+   </div>
+   <div class="inner-content">
+     <h2>Qnism</h2>
+     <p>Pop Band</p>
+     
+   </div>
+   <div class="inner-content2" >
+     <p><i class="fas fa-ellipsis-h"></i></p>
+   <p>4:44</p>
+   </div>
+ </div>
+ <div class="aside2-content" >
+   <div class="aside-img">
+    <div class="music"><i class="fas fa-play"></i></div>
+   <img  src="https://m.media-amazon.com/images/I/511X2G68kcL.jpg" alt="Alps" >
+   </div>
+   <div class="inner-content">
+     <h2>Camila Cabello</h2>
+     <p>Pop Band</p>
+     
+   </div>
+   <div class="inner-content2" >
+     <p><i class="fas fa-ellipsis-h"></i></p>
+   <p>4:44</p>
+   </div>
+ </div>
+ 
+ <div class="aside2-content" >
+   <div class="aside-img">
+    <div class="music"><i class="fas fa-play"></i></div>
+   <img src="https://m.media-amazon.com/images/I/511X2G68kcL.jpg" alt="Alps" >
+   </div>
+   <div class="inner-content">
+  
+    <h2>Camila Cabello</h2>  
+    <p>Singer</p>
+     
+   </div>
+   <div class="inner-content2" >
+     <p><i class="fas fa-ellipsis-h"></i></p>
+   <p>4:44</p>
+   </div>
+ </div>
+ <div class="aside2-content" >
+  <div class="aside-img">
+    <div class="music"><i class="fas fa-play"></i></div>
+  <img src="https://wallpaperaccess.com/full/1695787.jpg" alt="Alps" >
+  </div>
+  <div class="inner-content">
+    <h3>Mairage</h3>
+    <p>Pop Band</p>
+    
+  </div>
+  <div class="inner-content2" >
+    <p><i class="fas fa-ellipsis-h"></i></p>
+  <p>4:44</p>
+  </div>
+</div>
+<div class="aside2-content" >
+  <div class="aside-img">
+    <div class="music"><i class="fas fa-play"></i></div>
+  <img src="https://wallpaperaccess.com/full/1695787.jpg" alt="Alps" >
+  </div>
+  <div class="inner-content">
+    <h3>Mairage</h3>
+    <p>Pop Band</p>
+    
+  </div>
+  <div class="inner-content2" >
+    <p><i class="fas fa-ellipsis-h"></i></p>
+  <p>4:44</p>
+  </div>
+</div>
+<div class="aside2-content" >
+  <div class="aside-img">
+   <div class="music"><i class="fas fa-play"></i></div>
+  <img src="https://wallpaperaccess.com/full/1695787.jpg" alt="Alps" >
+  </div>
+  <div class="inner-content">
+    <h3>Mairage</h3>
+    <p>Pop Band</p>
+    
+  </div>
+  <div class="inner-content2" >
+    <p><i class="fas fa-ellipsis-h"></i></p>
+  <p>4:44</p>
+  </div>
+</div>
+<div class="aside2-content" >
+  <div class="aside-img">
+   <div class="music"><i class="fas fa-play"></i></div>
+  <img src="https://wallpaperaccess.com/full/1695787.jpg" alt="Alps" >
+  </div>
+  <div class="inner-content">
+    <h3>Mairage</h3>
+    <p>Pop Band</p>
+    
+  </div>
+  <div class="inner-content2" >
+    <p><i class="fas fa-ellipsis-h"></i></p>
+  <p>4:44</p>
+  </div>
+</div>
+
+<div class="aside2-content" >
+  <div class="aside-img">
+    <div class="music"><i class="fas fa-play"></i></div>
+  <img src="https://wallpaperaccess.com/full/1695787.jpg" alt="Alps" >
+  </div>
+  <div class="inner-content">
+    <h3>Mairage</h3>
+    <p>Pop Band</p>
+    
+  </div>
+  <div class="inner-content2" >
+    <p><i class="fas fa-ellipsis-h"></i></p>
+  <p>4:44</p>
+  </div>
+</div>
+<div class="aside2-content" >
+  <div class="aside-img">
+    <div class="music"><i class="fas fa-play"></i></div>
+  <img src="https://wallpaperaccess.com/full/1695787.jpg" alt="Alps" >
+  </div>
+  <div class="inner-content">
+    <h3>Mairage</h3>
+    <p>Pop Band</p>
+    
+  </div>
+  <div class="inner-content2" >
+    <p><i class="fas fa-ellipsis-h"></i></p>
+  <p>4:44</p>
+  </div>
+</div>
+
+
+
+
+</div>
+
+</div>
+
+ </div>
+ <div class="main" id="song">
+  <p id="logo"><i class="fa fa-music"></i>Music</p>
+  
+  <!--- left part --->
+   <div class="left">
+
+    <!--- song img --->
+    <img src="https://i.scdn.co/image/ab67616d0000b2733b8fbe2d8b25ca2bfddf5b16"id="track_image">
+       <div class="volume">
+          <p id="volume_show">90</p>
+          <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+          <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">  
+       </div>
+
+   </div>
+
+
+   <!--- right part --->
+   <div class="right">
+
+      <div class="show_song_no">
+        <a href="#" style="text-decoration: none;"> X</a>
+       
+      </div>
+
+   
+
+    <!--- middle part --->
+     <div class="middle">
+         <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+         <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+         <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+     </div>
+
+     <!--- song duration part --->
+      <div class="duration">
+         <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+      </div>
+         <button id="auto" onclick="autoplay_switch()">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+  </div>
+
+
+</div>
+<!--hamburger icon-->
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+</body>
+</html>
+
